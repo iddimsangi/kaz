@@ -2,6 +2,13 @@
 Some custom syling for the footer of this page. Place in custom.css.
 body{
 padding-top: 100px;
+margin: 0;
+  padding: 0;
+  background: #fff;
+
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
 }
 footer {
 	padding: 2em 0;
@@ -12,7 +19,7 @@ footer {
 }
 
 .glyphicon {
-	color: #FF0000;
+	color: #006600;
 }
 .glyphicon-pushpin, 
 .glyphicon-heart {
@@ -24,7 +31,7 @@ footer {
 }
 
 .btn-info {
-    background-color: #cdae51;
+    background-color: #334d00;
     border-color: #3F2B22;
     color: #FFFFFF;
 }
@@ -36,7 +43,10 @@ footer {
 .open .dropdown-toggle.btn-info {
   color: #000;
   background-color: #3F2B22;
-  border-color: #333;
+  border-color: #334d00;
+}
+.btn-primary{
+  background-color: #334d00;
 }
 .breadcrumb > li + li:before {
   content:none;
@@ -61,7 +71,7 @@ color: white;
   background-color: #347C2C;
 }
 .navbar-inverse .navbar-toggle:hover {
-  background-color: #ddd;
+  background-color: #334d00;
   color: #333;
 }
 .navbar-inverse .navbar-toggle .glyphicon {
@@ -82,7 +92,7 @@ color: white;
         border: none;
         border-radius: 0;
         overflow-y: auto;
-        background-color: #222;
+        background-color: #334d00;
         bottom: 0;
         overflow-x: hidden;
         padding-bottom: 40px;
@@ -161,4 +171,224 @@ color: white;
     background-repeat: no-repeat;
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
+}
+.thumbnail{
+  margin-top: 8px;
+}
+.thumbnail img {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #C9DECB;
+}
+.pager > ul{
+  background-color: #334d00;
+}
+
+/*loginpage*/
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+/*---------------*/
+
+.body{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-image: url(../img/cov1.jpg);
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.grad{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.header{
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 255px);
+  z-index: 2;
+}
+
+.header div{
+  float: left;
+  color: #334d00;
+  font-family: 'Exo', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+
+.header div span{
+  color: #000 !important;
+}
+
+.login{
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 50px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.login input[type=text]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #003300
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px;
+}
+
+.login input[type=password]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #000;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.login input[type=button]{
+  width: 260px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+  opacity: 0.8;
+}
+
+.login input[type=button]:active{
+  opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+  outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
 }
